@@ -1,5 +1,7 @@
 # wdk2000.github.io
 # Event-Radar
+# Website
+click https://wdk2000.github.io/ to visit event-radar
 # About
 An event-searching website that allows users to search for upcoming shows, sport activities and more. Entertainment is the core idea behind this application which provides a solution for searching for events in different categories including sports, music, arts & theatre, film and etc. This allows users to navigate and search for events according to their interests and profile as the site provides a large set of shows. EventsRadar is built based on the Ticketmaster API which provides access to content sourced from different platforms such as Ticketmaster, Universe, FrontGate and Ticketmaster Resale. There are over 230K+ events available in the API for various geographical regions inlcuding the United States, Canada, Mexico, Europe, Australia and New Zealand.
   
