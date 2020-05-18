@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Event Radar</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+    	<div class="container">
+			<div id="logo" class="pull-left">
+        		<h1><a href="#intro"><span></span>RADAR</a></h1>
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#mycontent">Events</a></li>
+          <li><a href="#footer">Contact</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0"><span>The Event Radar</span></h1>
+     <a href="#about" class="about-btn scrollto">Get Started</a>
+    </div>
+  </section>
+  <main id="main">  
+  <section id="about">
+      <div class="container">
+        <div class="row">
+        	<div class="col-md-12">
+        		<h2>About Us</h2>
+                <p>At Event Radar, we strive to put fans first. Every day we're listening to your feedback and working to improve your experience before, during, and after events.
+				In 2010, Event Radar and Live Nation merged to create Live Nation Entertainment. Now you have more options than ever to enjoy live events, and things are only getting better.
+				We're making real changes and putting you first in everything we do. Here's just a taste of what we're up to....</p>
+        	</div>
+        </div>
+      </div>
+  </section>
+   <section id="mycontent" class="section-with-bg">
+   		<div class="container">
+   			<div class="section-header"><br>
+                <h2>Get your events</h2>
+            </div>
+   			<div class="row">
+        		<div class="col-xs-7 col-md-12">
+                	<form class="form-inline"> 
+                    	<div class="input-group mx-auto my-2">
+                        	<div class="input-group-prepend">
+                            	<label class="input-group-text" for="country-select">Select a country</label>
+                        	</div>
+                        	<select id="country-select" onchange="obtainCountry()" class="custom-select">
+                            	<option value="">Choose...</option>
+                        		<option value="US">USA</option>
+                        		<option value="AU">Australia</option>
+                        		<option value="AT">Austria</option>
+                        		<option value="BE">Belgium</option>
+                        		<option value="CA">Canada</option>
+                        		<option value="DK">Denmark</option>
+                        		<option value="FI">Finland</option>
+                        		<option value="DE">Germany</option>
+                        		<option value="GB">Great Britain</option>
+                        		<option value="IE">Ireland</option>
+                        		<option value="MX">Mexico</option>
+                        		<option value="NL">Netherlands</option>
+                        		<option value="NZ">New Zealand</option>
+                        		<option value="NO">Norway</option>
+                        		<option value="ES">Spain</option>
+                        		<option value="SE">Sweden</option>
+                        		<option value="CH">Switzerland</option>
+                    		</select>
+                    	</div>
+                    	<div class="input-group mx-auto my-2">
+                        	<div class="input-group-prepend">
+                            	<label class="input-group-text" for="city-select">Select a city</label>
+                        	</div>
+                        	<select id="city-select" onchange="refreshCities()" class="custom-select">
+                            	<option value="">Choose...</option>  
+                        	</select>
+                    	</div>
+                    	<div class="input-group mx-auto my-2">
+                        	<div class="input-group-prepend">
+                          	    <label class="input-group-text" for="genre-select">Select a genre</label>
+                        	</div>
+                        	<select id="genre-select" onchange="refreshGenres()" class="custom-select">
+                            	<option value="">Choose...</option>  
+                        	</select>
+                    	</div>
+                	</form>
+           		</div>
+        	</div>
+        </div>
+        	<div class="container data-content">
+        		<div class="row">
+           			<div class="col">
+                		<div id="concert-data"> 
+                		</div>
+            		</div>
+        		</div>
+    		</div>
+   	</section>
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Dhyan<br>
+              <strong>Website : </strong> eventradar.in<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#your link" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>    
+  </div>
+  </footer><
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/event.js"></script>
+</body>
+
+</html>
